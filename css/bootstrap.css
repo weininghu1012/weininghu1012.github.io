@@ -193,7 +193,9 @@ th {
   }
   a,
   a:visited {
-    text-decoration: underline;
+      font-weight: bold; 
+      text-decoration: none;
+   
   }
   a[href]:after {
     content: " (" attr(href) ")";
