@@ -3,6 +3,7 @@ html, body{
     font-family: 'Raleway', 'sans-serif';
     font-size: 100%;
     background-color: #FFF;
+    background-image: url(images/greenleaf.png)
 }
 /*----start-header----*/
 .header{
@@ -57,7 +58,7 @@ nav a:hover{
 	text-decoration:none;
 }
 nav li a {
-	color:#F26D7D;
+	color:#01DFA5;
 }
 nav li:last-child a {
 	border-right: 0;
@@ -101,7 +102,7 @@ nav a#pull {
 	nav a#pull {
 		display: block;
 		position: relative;
-		color: #F26D7D;
+		color: #01DFA5;
 		text-align: right;
 		position: absolute;
 		top: -68px;
