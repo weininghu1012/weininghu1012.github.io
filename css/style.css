@@ -160,6 +160,10 @@ header h1 {
 .cd-timeline-img.cd-movie {
   background: #c03b44;
 }
+
+.cd-timeline-img.cd-bike {
+  background: #00BFFF;
+}
 .cd-timeline-img.cd-location {
   background: #f0ca45;
 }
