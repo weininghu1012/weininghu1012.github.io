@@ -1,0 +1,285 @@
+
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Weining Hu</title>
+
+        <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+
+
+        <!-- Custom Theme files -->
+        <link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+        <!-- Custom Theme files -->
+
+
+
+
+
+
+    </head>
+
+    <body>
+        <!----start-header--->
+        <div id="top" class="header">
+            <!----start-container---->
+            <div class="container">
+                <div class="logo navbar-header">
+
+                </div>
+                <!--top-nav-->
+                <nav class="top-nav">
+                                    
+                  <a href="http://info.flagcounter.com/by6B"><img src="http://s01.flagcounter.com/countxl/by6B/bg_E9F0F5/txt_000000/border_72CCC6/columns_5/maxflags_20/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+                    <ul class="top-nav">
+                        
+                        <li class="active"><a id = "a" href="index.html">Home</a></li>
+                        <li class="page-scroll"><a id = "a" href="#about">About</a></li>
+                        <li class="page-scroll"><a href="project.html">Projects</a></li>
+
+                        <li class="page-scroll"><a href="wis.html">WomenInSTEM</a></li>
+                    </ul>
+                    <a href="#" id="pull"><img src="images/nav-icon2.png" title="menu" /></a>
+                </nav>
+                <!--//top-nav-->
+            </div>
+        </div>
+    </body>  
+ </html>   
+
+
+
+
+
+<!-- MotionChart generated in R 3.2.0 by googleVis 0.5.9 package -->
+<!-- Thu Aug  6 23:45:43 2015 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataMotionChartID82a1105cd93 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Male",
+2014,
+3204,
+2369 
+],
+[
+ "Male",
+2013,
+2941,
+2410 
+],
+[
+ "Female",
+2014,
+1100,
+430 
+],
+[
+ "Female",
+2013,
+1039,
+396 
+],
+[
+ "Male",
+2011,
+2705,
+2406 
+],
+[
+ "Male",
+2012,
+2841,
+2457 
+],
+[
+ "Female",
+2011,
+903,
+379 
+],
+[
+ "Female",
+2012,
+976,
+390 
+],
+[
+ "Male",
+2009,
+2618,
+2363 
+],
+[
+ "Male",
+2010,
+2620,
+2282 
+],
+[
+ "Female",
+2009,
+863,
+377 
+],
+[
+ "Female",
+2010,
+911,
+337 
+],
+[
+ "Male",
+2007,
+2560,
+2511 
+],
+[
+ "Male",
+2008,
+2765,
+2536 
+],
+[
+ "Female",
+2007,
+881,
+421 
+],
+[
+ "Female",
+2008,
+911,
+395 
+],
+[
+ "Male",
+2005,
+2371,
+2407 
+],
+[
+ "Male",
+2006,
+2354,
+2418 
+],
+[
+ "Female",
+2005,
+875,
+385 
+],
+[
+ "Female",
+2006,
+855,
+412 
+],
+[
+ "Male",
+2003,
+2223,
+2343 
+],
+[
+ "Male",
+2004,
+2292,
+2380 
+],
+[
+ "Female",
+2003,
+900,
+384 
+],
+[
+ "Female",
+2004,
+848,
+380 
+] 
+];
+data.addColumn('string','Gender');
+data.addColumn('number','Year');
+data.addColumn('number','Math.CS');
+data.addColumn('number','Engineer');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartMotionChartID82a1105cd93() {
+var data = gvisDataMotionChartID82a1105cd93();
+var options = {};
+options["width"] =    600;
+options["height"] =    500;
+options["state"] = "";
+
+
+    var chart = new google.visualization.MotionChart(
+    document.getElementById('MotionChartID82a1105cd93')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "motionchart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartMotionChartID82a1105cd93);
+})();
+function displayChartMotionChartID82a1105cd93() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID82a1105cd93"></script>
+ 
+<!-- divChart -->
+  
+<div id="MotionChartID82a1105cd93" 
+  style="width: 600; height: 500;">
+</div>
