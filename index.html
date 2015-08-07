@@ -65,6 +65,43 @@
                 <br></br>
                 <p>I am in the process of graduate school application for 2016 Fall, let me know if you share similar goal and I would love to connect.</p>
                 <h2>Education</h2>
+                
+                <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization',
+       'version':'1','packages':['timeline']}]}"></script>
+<script type="text/javascript">
+
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+  var container = document.getElementById('example2.1');
+  var chart = new google.visualization.Timeline(container);
+  var dataTable = new google.visualization.DataTable();
+
+  dataTable.addColumn({ type: 'string', id: 'Term' });
+  dataTable.addColumn({ type: 'string', id: 'Name' });
+  dataTable.addColumn({ type: 'date', id: 'Start' });
+  dataTable.addColumn({ type: 'date', id: 'End' });
+
+  dataTable.addRows([
+    [ '1', 'Hubei University', new Date(2011, 9, 1), new Date(2013, 7, 1) ],
+    [ '2', 'University of British Columbia', new Date(2013, 9, 1),  new Date(2016, 5, 1) ],
+    ]);
+
+  chart.draw(dataTable);
+}
+</script>
+
+<div id="example2.1" style="height: 200px;"></div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 <p><strong>University of British Columbia----</strong> 2013-2016(Expected)</p>
                 <p> Bachelor of Science, Major in Computer Science combined with Statistics</p>
                 <p><strong>Hubei University----</strong> 2011-2013(Transfer to UBC)</p>
