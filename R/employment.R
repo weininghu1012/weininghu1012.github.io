@@ -1,6 +1,6 @@
 install.packages("googleVis")
 library(googleVis)
-employ = read.csv(file = "/Users/weininghu/Desktop/employment1.csv", header = T, sep = ',')
+employ = read.csv(file = "/Users/weininghu/Desktop/weininghu1012.github.io/R/employment1.csv", header = T, sep = ',')
 
 Motion=gvisMotionChart(employ,idvar="Gender",timevar="Year")
 plot(Motion)
@@ -40,3 +40,16 @@ Bubble = gvisBubbleChart(fe, idvar = "company",xvar = "num_female_eng",yvar = "p
                                       '#F3844C','#e12828','#400191','#71685f','#366fb3','#9cb443','#a82400','#3A6D8E','#3b5998',
                                      '#fffc00','#204056','#000']", width="1600px", height="900px"，vAxes="[{title:'Number of female engineer'}, {title:'Percentage of female engineer'}]"))
 plot(Bubble)
+
+
+
+education = read.csv(file = "/Users/weininghu/Desktop/weininghu1012.github.io/R/education.csv",header = T, sep = ',')
+education$Year = as.numeric(education$Year)
+education$Bachelor = as.numeric(education$Bachelor)
+education$Master = as.integer(education$Master)
+education$Ph.D = as.numeric(education$Ph.D)
+head(education)
+
+MotionE=gvisMotionChart(education,idvar="Gender",timevar="Year")
+plot(MotionE)
+

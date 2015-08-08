@@ -85,8 +85,10 @@ function drawChart() {
     [ '1', 'Hubei University', new Date(2011, 9, 1), new Date(2013, 7, 1) ],
     [ '2', 'University of British Columbia', new Date(2013, 9, 1),  new Date(2016, 5, 1) ],
     ]);
-
-  chart.draw(dataTable);
+  var options = {
+    colors: ['#01DFA5', '#58ACFA'],
+  };
+  chart.draw(dataTable,options);
 }
 </script>
 
