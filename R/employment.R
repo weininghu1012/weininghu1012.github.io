@@ -32,10 +32,11 @@ head(fe)
 # Snapchat
 # Codecademy
 # The New York Times(New Products)
-
-
-Bubble = gvisBubbleChart(fe, idvar = "company",xvar = "num_female_eng",yvar = "percent_female_eng",sizevar = "num_eng",
-                         options=list(colors="['#888888',#2895F1','#c41200','#C92228','#0079ad','#f45800','#fd5c63','#333333','#f94877',
+head(fe)
+fe = fe[-1,]
+head(fe)
+Bubble = gvisBubbleChart(fe, idvar = "company",xvar = "num_female_eng",yvar = "percent_female_eng",colorvar = "company",sizevar = "num_eng",
+                         options=list(colors="['#2895F1','#c41200','#C92228','#0079ad','#f45800','#fd5c63','#333333','#f94877',
                                       '#F3844C','#e12828','#400191','#71685f','#366fb3','#9cb443','#a82400','#3A6D8E','#3b5998',
-                                     '#fffc00','#204056','#000']"))
+                                     '#fffc00','#204056','#000']", width="1600px", height="900px"，vAxes="[{title:'Number of female engineer'}, {title:'Percentage of female engineer'}]"))
 plot(Bubble)
