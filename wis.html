@@ -1,9 +1,9 @@
 
-
+<!---The usual header--->
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Weining Hu</title>
+        <title>Women in STEM</title>
 
         <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 
@@ -47,9 +47,9 @@
  </html>   
 
 
-
-
-
+<p>Graph1: Employed person number by sex in STEM fields(flash player required)</p>
+<p> Data source: <a href="http://www.bls.gov/cps/tables.htm" >United States Bureau of Labor Statistics</a></p>
+<!--The motion chart for male and female employment condition comparison-->
 <!-- MotionChart generated in R 3.2.0 by googleVis 0.5.9 package -->
 <!-- Thu Aug  6 23:45:43 2015 -->
 
@@ -218,10 +218,14 @@ return(data);
 // jsDrawChart
 function drawChartMotionChartID82a1105cd93() {
 var data = gvisDataMotionChartID82a1105cd93();
-var options = {};
-options["width"] =    600;
-options["height"] =    500;
-options["state"] = "";
+var options = {
+  'width':800,
+  'height':400,
+  'showHeader':true,
+  
+    
+};
+
 
 
     var chart = new google.visualization.MotionChart(
@@ -280,5 +284,257 @@ callbacks.shift()();
 <!-- divChart -->
   
 <div id="MotionChartID82a1105cd93" 
-  style="width: 600; height: 500;">
+  style="width: 800; height: 600;">
+</div>
+
+
+
+<!--Bubble Chart-->
+<br></br>
+<p>Graph 2: Number and percentage of female engineers in IT companies </p>
+<p>(The size of the bubble is porprotion to the total engineers of the company)
+</p>
+<p>Data source: <a href = "https://docs.google.com/spreadsheet/ccc?key=0AlZH8QBl60oodEJTdFA5TlZOcDJCMU02RkZoSHF5SHc#gid=0"> Tracy Chou's public google spreadsheet</a> </p>
+<!-- BubbleChart generated in R 3.2.0 by googleVis 0.5.9 package -->
+<!-- Fri Aug  7 18:33:10 2015 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataBubbleChartID3442384b8fc () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Dropbox",
+26,
+9.45,
+"Dropbox",
+275 
+],
+[
+ "Yelp",
+17,
+8.25,
+"Yelp",
+206 
+],
+[
+ "Pinterest",
+29,
+16.57,
+"Pinterest",
+175 
+],
+[
+ "PayPal(Braintree)",
+7,
+4.67,
+"PayPal(Braintree)",
+150 
+],
+[
+ "Etsy",
+19,
+12.75,
+"Etsy",
+149 
+],
+[
+ "Airbnb",
+18,
+12.59,
+"Airbnb",
+143 
+],
+[
+ "GitHub",
+14,
+13.46,
+"GitHub",
+104 
+],
+[
+ "Foursquare",
+6,
+7.06,
+"Foursquare",
+85 
+],
+[
+ "Eventbrite",
+14,
+18.92,
+"Eventbrite",
+74 
+],
+[
+ "Flipboard",
+6,
+10,
+"Flipboard",
+60 
+],
+[
+ "Yahoo(Flicker)",
+4,
+9.52,
+"Yahoo(Flicker)",
+42 
+],
+[
+ "HootSuite",
+6,
+14.63,
+"HootSuite",
+41 
+],
+[
+ "Stack Exchange",
+3,
+7.5,
+"Stack Exchange",
+40 
+],
+[
+ "Khan Academy",
+10,
+25.64,
+"Khan Academy",
+39 
+],
+[
+ "Quora",
+4,
+11.43,
+"Quora",
+35 
+],
+[
+ "Coursera",
+2,
+8.33,
+"Coursera",
+24 
+],
+[
+ "Facebook(Parse)",
+2,
+13.33,
+"Facebook(Parse)",
+15 
+],
+[
+ "Snapchat",
+2,
+15.38,
+"Snapchat",
+13 
+],
+[
+ "Codecademy",
+1,
+11.11,
+"Codecademy",
+9 
+],
+[
+ "The New York Times(New Products)",
+3,
+14.29,
+"The New York Times(New Products)",
+21 
+] 
+];
+data.addColumn('string','company');
+data.addColumn('number','num_female_eng');
+data.addColumn('number','percent_female_eng');
+data.addColumn('string','company.1');
+data.addColumn('number','num_eng');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartBubbleChartID3442384b8fc() {
+var data = gvisDataBubbleChartID3442384b8fc();
+
+var options = {
+    
+    title:'Number and percentage of female engineers in IT companies',
+    hAxis: {title: 'Number of female engineers'},
+    vAxis: {title: 'Percentage of female engineers'}
+};
+options["colors"] = ['#2895F1','#c41200','#C92228','#0079ad','#f45800','#fd5c63','#333333','#f94877',
+                                      '#F3844C','#e12828','#400191','#71685f','#366fb3','#9cb443','#a82400','#3A6D8E','#3b5998',
+                                     '#fffc00','#204056','#000'];
+options["width"] = "1000px";
+options["height"] = "500px";
+
+
+    var chart = new google.visualization.BubbleChart(
+    document.getElementById('BubbleChartID3442384b8fc')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartBubbleChartID3442384b8fc);
+})();
+function displayChartBubbleChartID3442384b8fc() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID3442384b8fc"></script>
+
+
+<!-- divChart -->
+  
+<div id="BubbleChartID3442384b8fc" 
+  style="width: 1000px; height: 500px;">
 </div>
